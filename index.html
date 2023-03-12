@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="scoreboard-container">
+            <div class="scoreboard-column">
+                <h3 id="home-name">HOME</h3>
+                <div class="total-score">
+                    <span class="score-count" id="home-score-count">0</span>
+                </div>
+                <div class="points-buttons">
+                    <button id="home-one-point" onclick="homeOnePoint()">+1</button>
+                    <button id="home-two-points" onclick="homeTwoPoints()">+2</button>
+                    <button id="home-three-points" onclick="homeThreePoints()">+3</button>
+                </div>
+            </div>
+            <div class="scoreboard-column">
+                <h3 id="guest-name">GUEST</h3>
+                <div class="total-score">
+                    <span class="score-count" id="guest-score-count">0</span>
+                </div>
+                <div class="points-buttons">
+                    <button id="guest-one-point" onclick="guestOnePoint()">+1</button>
+                    <button id="guest-two-points" onclick="guestTwoPoints()">+2</button>
+                    <button id="guest-three-points" onclick="guestThreePoints()">+3</button>
+                </div>
+            </div>     
+        </div>
+        <button onclick="resetScoreboard()">RESET</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
